@@ -4,6 +4,28 @@ A Streamlit study companion powered by Gemini text and vision. Upload a question
 diagram, or notes, ask follow-ups, practise with hints/quizzes, then review and
 send a revision recap to Telegram.
 
+## Project structure
+
+```text
+snap-and-study/
+├── app.py                     # Streamlit app, onboarding, and study chat
+├── prompts.py                 # AI personality and revision recap prompts
+├── services.py                # Input validation and Telegram delivery
+├── telegram_setup.py          # Helper to find your Telegram chat ID
+├── requirements.txt           # Python dependencies
+├── README.md                  # Setup, usage, and deployment guide
+├── .gitignore                 # Excludes real secrets and local generated files
+├── .streamlit/
+│   ├── config.toml            # Theme and upload settings
+│   └── secrets.toml.example   # Copy to secrets.toml and add your own keys
+└── tests/
+    └── test_project.py        # Automated app and integration checks
+```
+
+The local project folder is `D:\macropro`; the folder name does not affect the
+app. The private `.streamlit/secrets.toml`, `venv/`, and submission ZIP are local
+files excluded from GitHub. Telegram replaces the guide's WhatsApp action tool.
+
 ## Run locally
 
 Use Python 3.12 or newer. In Windows PowerShell:
